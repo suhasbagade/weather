@@ -2,9 +2,13 @@ package client
 
 import (
 	"fmt"
-	"net/url"
 )
 
+func hello() {
+	fmt.Println("Hello World")
+}
+
+/**
 func getrequest(suburl string, queryparams string) {
 
 	baseurl := url.URL{
@@ -22,3 +26,4 @@ func getrequest(suburl string, queryparams string) {
 	// apikey AUBP88JPWuGjKkFWGiqvMcUmBTyxps39
 	// GET operation
 }
+**/
