@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+var Audience = "Super World"
+
+
 func hello() {
 	fmt.Println("Hello World")
 }
