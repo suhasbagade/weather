@@ -2,17 +2,16 @@ package client
 
 import (
 	"fmt"
+	"net/url"
 )
 
 var Audience = "Super World"
-
 
 func hello() {
 	fmt.Println("Hello World")
 }
 
-/**
-func getrequest(suburl string, queryparams string) {
+func Getrequest(suburl string, queryparams string) {
 
 	baseurl := url.URL{
 		Scheme: "https",
@@ -20,6 +19,8 @@ func getrequest(suburl string, queryparams string) {
 	}
 
 	fmt.Println(baseurl)
+	fmt.Println(suburl)
+	fmt.Println(queryparams)
 
 	//parameters
 	// queryparams
@@ -29,4 +30,3 @@ func getrequest(suburl string, queryparams string) {
 	// apikey AUBP88JPWuGjKkFWGiqvMcUmBTyxps39
 	// GET operation
 }
-**/
