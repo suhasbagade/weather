@@ -5,8 +5,8 @@ import (
     "net/http"
     "time"
     "html/template"
-    "currentconditions"
-    com "commons"
+    "github.com/suhasbagade/weather/service/currentconditions"
+    com "github.com/suhasbagade/weather/service/locationdetails"
 )
 
 type pageinfo struct {

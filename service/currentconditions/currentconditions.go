@@ -2,7 +2,7 @@ package currentconditions
 
 import (
 	"net/url"
-	"github.com/suhasbagade/weather/service/commons/httpclient"
+	"github.com/suhasbagade/common-lib/httpclient"
 	"encoding/json"
 )
 
