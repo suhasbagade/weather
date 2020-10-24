@@ -1,16 +1,12 @@
 package client
 
-import (
-	"fmt"
-	"net/url"
-)
+import "net/url"
 
-var Audience = "Super World"
+const apihost = "dataservice.accuweather.com"
+const apikey = "AUBP88JPWuGjKkFWGiqvMcUmBTyxps39"
+const apiurlscheme = "https"
 
-func hello() {
-	fmt.Println("Hello World")
-}
-
+/**
 func Getrequest(suburl string, queryparams string) {
 
 	baseurl := url.URL{
@@ -29,4 +25,23 @@ func Getrequest(suburl string, queryparams string) {
 	// base url http://dataservice.accuweather.com
 	// apikey AUBP88JPWuGjKkFWGiqvMcUmBTyxps39
 	// GET operation
+}
+**/
+
+func getbaseurl() {
+	baseurl := url.URL{
+		Scheme: apiurlscheme,
+		Host:   apihost,
+	}
+	return baseurl
+}
+
+func GetlocationKey() {
+
+}
+
+func GetRequest(path string) {
+
+	// check for all possible paths
+
 }

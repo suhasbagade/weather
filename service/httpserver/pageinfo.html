@@ -1,0 +1,49 @@
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    
+  }
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}  
+</style> 
+
+
+<body style="background-color:MediumSeaGreen;text-align:left" leftmargin="10%" rightmargin="10%" topmargin="10%">
+   
+</body>
+<h1>{{ .Title }}</h1>
+<h3>{{ .Description }}</h3>
+<p1>{{ .Timestamp }}</p1>
+
+<form action="/indextempl" method="GET">
+
+<label for="locationID">Location:</label>
+<input type="text" id="locationID" name="Location">
+<input type="submit" value="submit">
+
+<h2>{{ .Location }}</h2>
+<table>
+    <tr>
+        <th>Temperature in Celsius</th>
+        <th>TimeZone</th>
+        <th>Lattitude</th>
+        <th>Longitude</th>
+      </tr>
+      <tr>
+        <td>{{ .Temperature }}</td>
+        <td>{{ .Timezone }}</td>
+        <td>{{ .Latitude }}</td>
+        <td>{{ .Longitude }}</td>
+      </tr>
+</table>
+</form>

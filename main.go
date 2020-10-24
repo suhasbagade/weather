@@ -1,15 +1,24 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/suhasbagade/weather/client"
+	//"fmt"
+	//"commons"
+	//"currentconditions"
+	"github.com/suhasbagade/weather/service/httpserver"
 )
 
 func main() {
-	fmt.Println("Hello World")
-	fmt.Println(client.Audience)
-	client.Hello()
 
-	client.Getrequest("ayz", "abc")
+//locationkey := commons.Getlocationkey("Bengaluru")
+//fmt.Println(locationkey)
+
+//currenttemperaturecelsius := currentconditions.GetCurrentTemperatureCelsius(locationkey)
+
+//currenttemperaturefahrenheit := currentconditions.GetCurrentTemperatureFahrenheit(locationkey)
+
+//fmt.Println(currentconditions.GetCurrentTemperatureCelsius(locationkey))
+//fmt.Println(currentconditions.GetCurrentTemperatureFahrenheit(locationkey))
+
+httpserver.Httpserverfunc()
+
 }
